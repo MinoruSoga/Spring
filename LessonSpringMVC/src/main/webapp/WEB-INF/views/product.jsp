@@ -9,6 +9,18 @@
 	<title>Product</title>
 </head>
 <body>
+<c:if test="${not empty productList}">
+	<table border="1">
+		<tr><th>名前</th><th>価格</th></tr>
+		<c:forEach var="productForm" items="${productList }">
+			<tr>
+				<td><c:out value="${productForm.name}"></c:out></td>
+				<td><c:out value="${productForm.price}"></c:out></td>
+			</tr>
+		</c:forEach>
+	</table>
+	<br>
+</c:if>
 <p><c:out value="${ message}"/></p>
 <form:form modelAttribute="productForm">
 	名前<form:input path="name" placeholder="名前を入力してください"/><br>
