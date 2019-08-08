@@ -19,7 +19,7 @@ public class HelloController {
 	//modelという箱にmessageという名の名前でHelloSpringという文字列を格納している
 	public String hello(Model model) {
 		
-		model.addAttribute("message", "Hello,Spring!" );
+		model.addAttribute("message", "<script>alert()</script>");
 		//hello.jspへ遷移する。
 		return "home";
 	}

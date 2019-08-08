@@ -9,6 +9,6 @@
 	Hello Spring!
 </h1>
 
-<P> ${message} </P>
+<P>${message}</P>
 </body>
 </html>
