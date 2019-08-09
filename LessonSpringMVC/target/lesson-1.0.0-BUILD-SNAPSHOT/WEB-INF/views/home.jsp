@@ -5,10 +5,8 @@
 	<title>Home</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
+<h1>HomePage</h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P><c:out value="${message}"/></P>
 </body>
 </html>
