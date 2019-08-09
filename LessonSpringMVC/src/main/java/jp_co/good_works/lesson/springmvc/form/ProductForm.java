@@ -15,5 +15,4 @@ public class ProductForm {
 	public void setPrice(Integer price) {
 		this.price = price;
 	}
-	
 }
