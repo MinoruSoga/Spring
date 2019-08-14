@@ -28,10 +28,9 @@
 		<br>
 	</c:if>
 	<form:form modelAttribute="productForm">
-	名前<form:input path="name"/><br>
-	価格<form:input path="price"/><br>
+	名前<form:input path="name"/><form:errors path="name" cssStyle="color:red"/><br>
+	価格<form:input path="price"/><form:errors path="price" cssStyle="color:red"/><br>
 	<input type="submit" value="送信"><br>
 	</form:form>
-	<%-- <form:errors path="price" cssStyle="color:red"/> --%>
 </body>
 </html>

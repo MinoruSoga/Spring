@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>UserInfoForm</title>
 </head>
 <body>
 	
@@ -37,34 +37,33 @@
 		</table>
 	</c:if>
 	<form:form modelAttribute="userInfoForm">
-	名前
-	<form:input path="name" placeholder="名前を入力してください" />
-		<form:errors path="name"></form:errors>
-		<br>
-	年齢：
-	<form:input path="age" placeholder="0" />
-		<form:errors path="age"></form:errors>
-		<br>
-	性別：
-	<form:radiobuttons path="gender" items="${genders}" />
-		<br> 
-	E-mail：
-	<form:input path="email" />
-		<form:errors path="email"></form:errors>
-		<br>
-			出身地：
+		名前
+		<form:input path="name" placeholder="名前を入力してください" />
+			<form:errors path="name"></form:errors>
+			<br>
+		年齢：
+		<form:input path="age" placeholder="0" />
+			<form:errors path="age"></form:errors>
+			<br>
+		性別：
+		<form:radiobuttons path="gender" items="${genders}" />
+			<br> 
+		E-mail：
+		<form:input path="email" />
+			<form:errors path="email"></form:errors>
+			<br>
+		出身地：
 			<form:select path="birthplace" items="${birthplace}" multiple="false" />
-		<br> 好きな言語：
-	<form:checkboxes path="favoriteLangs" items="${favoriteLang}" />
-		<br> 
-	備考：<br>
-	<form:textarea path="remarks" />
-		<br>
-		<br><input type="submit" value="送信">
-		
-	    </form:form>
-
-
+			<br> 
+		好きな言語：
+		<form:checkboxes path="favoriteLangs" items="${favoriteLang}" />
+			<br> 
+		備考：<br>
+		<form:textarea path="remarks" />
+			<br>
+			<br>
+			<input type="submit" value="送信">
+	</form:form>
 
 </body>
 </html>

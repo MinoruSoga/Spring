@@ -2,11 +2,11 @@ package jp_co.good_works.lesson.springmvc.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,6 +24,7 @@ public class UserInfoController {
 		List<String> genders = new ArrayList<String>();
 		List<String> birthplace = new ArrayList<String>();
 		List<String> favoriteLangs = new ArrayList<String>();
+//		属性名を明示的に指定
 		model.addAttribute("userInfoFormList", userInfoFormList);
 
 		genders.add("男");
@@ -51,6 +52,7 @@ public class UserInfoController {
 		model.addAttribute("birthplace", birthplace);
 
 		model.addAttribute("message", "入力してください");
+//		UserInfoFormのクラスのインスタンスであるformをuserInfoFormに格納
 		model.addAttribute("userInfoForm", form);
 		return "userinfo";
 	}
@@ -92,9 +94,9 @@ public class UserInfoController {
 			model.addAttribute("message", "入力されました");
 			userInfoFormList.add(form);
 		}
-		
+//		formをuserinfo〜に格納
 		model.addAttribute("userInfoFormList", userInfoFormList);
-		model.addAttribute("userInfoList", form);
+		model.addAttribute("userInfoForm", form);
 		return "userinfo";
 
 	}
