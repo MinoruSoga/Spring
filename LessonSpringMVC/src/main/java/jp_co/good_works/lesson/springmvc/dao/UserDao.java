@@ -34,12 +34,6 @@ public class UserDao {
                 loginInfo = new LoginInfo();
                 loginInfo.setUserID(userID);
                 loginInfo.setUserID(password);
-                //String user = rs.getString("USERID");
-                //String password = rs.getString("password");
-                //loginInfo.setUserID(password);
-                //System.out.println("ID:"+user+"PW:"+password);
-                //if(user.equals(USERID)&&password.equals(password)){
-                //}else{
                 }
             }catch(ClassNotFoundException e){
                 //TODO自動化されたcatchブロック
