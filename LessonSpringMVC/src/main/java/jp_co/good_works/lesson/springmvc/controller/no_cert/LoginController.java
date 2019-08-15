@@ -35,7 +35,6 @@ public class LoginController {
         model.addAttribute("message", "入力してください");
         model.addAttribute("loginForm", form);
         return "login";
-
     }
 
     @RequestMapping(value="/login", method=RequestMethod.POST)
@@ -52,6 +51,5 @@ public class LoginController {
             model.addAttribute("message", "ユーザID、パスワードを入力してください");
         }
         return "login";
-
     }
 }
