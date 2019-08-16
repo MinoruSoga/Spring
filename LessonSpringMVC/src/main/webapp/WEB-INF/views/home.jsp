@@ -5,10 +5,8 @@
 	<title>Home</title>
 </head>
 <body>
-<h1>
-	Hello Spring!
-</h1>
+<h1>HomePage</h1>
 
-<P>${message}</P>
+<P><c:out value="${message}"/></P>
 </body>
 </html>
