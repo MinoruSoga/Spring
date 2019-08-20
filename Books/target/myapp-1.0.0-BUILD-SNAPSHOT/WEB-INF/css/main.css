@@ -1,0 +1,26 @@
+@charset "UTF-8";
+div{
+
+    display: block;
+
+}
+
+.summary-image{
+
+    vertical-align: top;
+
+    width: 100%;
+
+}
+
+.summary-image img{
+
+    margin: 0 24px;
+
+    width: calc(100% - 48px);
+
+    background-color: #ccc !important;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,.2) !important;
+
+}
